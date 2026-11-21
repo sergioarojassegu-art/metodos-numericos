@@ -12,10 +12,20 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Configuración de CORS para permitir solicitudes desde cualquier origen
+# Configuración de CORS permitiendo orígenes seguros y desarrollo
+allowed_origins = [
+    "https://frontend-seven-ruddy-69.vercel.app",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+env_frontend_url = os.environ.get("FRONTEND_URL")
+if env_frontend_url and env_frontend_url not in allowed_origins:
+    allowed_origins.append(env_frontend_url)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins if os.environ.get("STRICT_CORS") == "true" else ["*"],
+    allow_origin_regex=r"https://frontend.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

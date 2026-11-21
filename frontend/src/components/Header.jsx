@@ -8,7 +8,7 @@ export default function Header({ currentView, onNavigate }) {
         type="button" 
         onClick={() => onNavigate('home')}
       >
-        Métodos numéricos : Sergio Rojas y Braiyan Murcia
+        Métodos numéricos : Sergio Rojas y Brayan Murcia
       </button>
       <nav className="nav" id="nav">
         <button 

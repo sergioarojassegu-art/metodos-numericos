@@ -2,7 +2,7 @@
 
 Proyecto completo e interactivo para la resolución paso a paso de los 11 métodos numéricos exigidos por la rúbrica oficial.
 
-**Autores:** Sergio Rojas y Braiyan Murcia
+**Autores:** Sergio Rojas y Brayan Murcia
 
 ---
 

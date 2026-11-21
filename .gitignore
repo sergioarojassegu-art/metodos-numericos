@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend_env/
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+portable_node/
+
+# Frontend build outputs & caches
+frontend/dist/
+frontend/dist-ssr/
+frontend/.cache/
+dist/
+
+# Vercel
+.vercel/
+
+# Backups & Archives
+*.zip
+*.tar.gz
+*.tgz
+
+# Environment & local secrets
+.env
+.env.local
+.env.*.local
+
+# IDEs & System
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
